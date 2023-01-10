@@ -11,7 +11,16 @@ $(document).ready(function () {
     localStorage.setItem(time, text);  
   })
 
+  function timeTrack () {
+  var currentTime = moment().hour();
   
+  $(".time-block").each(function() {
+ var hourBlock = parseInt($(this).attr('id').split('hour')[1]);
+ console.log(hourBlock, currentTime)
+ 
+  })
+  }
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
