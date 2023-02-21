@@ -1,4 +1,6 @@
- $('#currentday').text(moment().format("MMMM Do YYYY, h:mm:ss a")),
+var time = moment().format("MMMM Do YYYY, h:mm:ss a");
+$("#currentDay").text(time);
+var saveBtn = document.querySelector("#saveBtn");
 
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
